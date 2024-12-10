@@ -1,0 +1,7 @@
+&i2c1 {
+    compatible = "ssd1306";
+    label = "OLED";
+    reg = <0x3C>;
+    sda-pin = <0x0D>;
+    scl-pin = <0x0E>;
+};
