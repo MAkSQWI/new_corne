@@ -11,3 +11,28 @@
     label = "zmk_backlight";
 };
 
+&pwm0 {
+    status = "okay";
+    ch0-pin = <13>;  /* LED Red */
+    ch1-pin = <14>;  /* LED Green */
+    ch2-pin = <15>;  /* LED Blue */
+};
+
+&gpio {
+    led_0: pwmleds {
+        compatible = "pwm-leds";
+        label = "Red LED";
+        pwm_led_0 {
+            pwms = <&pwm0 13>;
+            label = "LED Red";
+        };
+        pwm_led_1 {
+            pwms = <&pwm0 14>;
+            label = "LED Green";
+        };
+        pwm_led_2 {
+            pwms = <&pwm0 15>;
+            label = "LED Blue";
+        };
+    };
+};
