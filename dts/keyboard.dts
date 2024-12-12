@@ -1,3 +1,0 @@
-/chosen {
-    zmk_backlight = <&pwm0>;
-};
