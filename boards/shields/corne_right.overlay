@@ -34,6 +34,6 @@
     };
 };
 
-chosen {
-    zmk,backlight = &backlight;
+/chosen {
+    zmk,backlight = <&pwm0>;
 };
