@@ -5,3 +5,8 @@
     sda-pin = <0x0D>;
     scl-pin = <0x0E>;
 };
+
+&leds {
+    status = "okay";
+    label = "zmk_backlight";
+};
